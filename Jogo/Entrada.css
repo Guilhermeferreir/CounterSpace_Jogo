@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
+}
+img{
+    margin-top: 50px;
+    margin-left: 450px;
+}
+link, a{
+    text-align: center;
+    color: rgb(255, 255, 255) ;
+    border: 5px solid rgb(77, 77, 250) ;
+    border-radius: 10px;
+    padding: 12px;
+    background-size: 300px;
+    margin-left: 555px;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+a:hover{
+    padding: 15px;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 100px;
+    color: rgb(128, 128, 128);
+}
