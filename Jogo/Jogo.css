@@ -1,11 +1,12 @@
 body{
     padding: 0;
     margin: 0;
-    background-image: url("https://i.redd.it/i39tpuk3uuu51.png");
+    background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
     background-size: 100vw 100vh ;
     background-repeat: no-repeat;
 }
 #canvas {
     display: block;
 }
+
 
