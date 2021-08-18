@@ -1,9 +1,9 @@
-canvas.height = window.innerHeight; //altura em px da janela de visualização do navegador
-canvas.widht = window.innerWidth;
+//canvas.height = window.innerHeight  //altura em px da janela de visualização do navegador
+//canvas.widht = window.innerWidth
 
 //carrega a janela do navegador antes
 window.onload = function () {
-  var img = new Image (); //cria imagem
+  var img = new Image (); //cria imagem do icone
   img.src = './icone.png';
   var UP = 38, DOWN = 40, LEFT = 37, RIGHT = 39; // codigos das teclas
   var moveleft = false, moveright = false, movedown = false, moveup = false; // nao ira mover
@@ -15,10 +15,16 @@ window.onload = function () {
     spriteY: 0,
     largura: 100,
     altura: 50,
-    x: 50,
-    y: 400,
+    x: 30,
+    y: 250,
     desenha () {
-      contexto.clearRect(0, 0, canvas.widht, canvas.height); //limpar oq foi desenhado
+     // globais.obstaculo.desenha();
+      contexto.clearRect(0,0, 800, 500); //limpa oq foi desenhado
+      //score
+      contexto.font = "20px Comic Sans MS";
+      contexto.fillStyle = "rgb(11, 92, 25)";
+      contexto.textAlign = "center";
+      contexto.fillText("Score: 00.00.00 ", 700, 50);
       //desenha a imagem com suas cordenadas
       contexto.drawImage( 
         img,
@@ -29,6 +35,26 @@ window.onload = function () {
       );
     }
   };
+  //TENTATIVA DE CRIAR OBSTACULOS 
+  /**globais.obstaculo = criaobstaculo ();
+  function criaobstaculo (){
+    var obstaculo = {
+      largura: 50,
+      altura: 200, 
+      posiçãoX: 600,
+      posiçãoY: 0,
+      espaço: 80, // entre os obstaculos
+      desenha (){
+        contexto.fillStyle = "white"
+        contexto.fillRect (
+          obstaculo.posiçãoX, obstaculo.posiçãoY,
+          obstaculo.largura, obstaculo.altura,
+        )
+      }
+    }
+    return obstaculo;
+  }**/
+
   //atualizar as funcoes empregadas
   function atualizar() {
     objeto.desenha();
@@ -86,7 +112,6 @@ window.onload = function () {
       objeto.y--;
     }
   }
-
   //function renderizar() {
     //contexto.clearRect(0, 0, canvas.widht, canvas.height);//limpar do retangulo na tela/ onde comeca
     //contexto.fillRect(objeto.x, objeto.y, 50, 50) //desenha o retangulo
