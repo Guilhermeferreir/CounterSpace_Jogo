@@ -6,7 +6,7 @@ body{
 #canvas {
     border: 2px solid rgb(11, 92, 25);
     display: block;
-    margin: 200px auto 0 500px ;
+    margin: 10% auto 0 auto ;
     background-image: url("https://i.pinimg.com/originals/f4/52/a2/f452a2f4b634b3011e065da8eaf0a5c3.gif");
 }
 

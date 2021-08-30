@@ -9,26 +9,33 @@
 img{
     margin: 5% 37% 5% 37%;
 }
-link, a{
-    text-align: center;
+a {
+    height: 50px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgb(255, 255, 255) ;
     border: 5px solid rgb(77, 77, 250) ;
     border-radius: 10px;
     padding: 12px;
-    margin-left: 43%;
+    margin: 0 auto 0 40%;
     font-size: 25px;
     font-weight: 700;
     text-decoration: none;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     transition: 0.3s;
 }
 a:hover{
+    border: 5px solid #191970 ;
     padding: 15px;
     font-size: 30px;
 }
 p{
+    height: 50px;
+    width: 500px;
     text-align: center;
     font-size: 25px;
-    margin-top: 15%;
+    margin: 13% 37% 0 36%;
     color: rgb(128, 128, 128);
 }
